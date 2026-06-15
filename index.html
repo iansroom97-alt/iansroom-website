@@ -43,6 +43,13 @@
       overflow-x: hidden;
     }
 
+    /* ── IMAGES ────────────────────────────────────────── */
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
     /* ── LAYOUT ────────────────────────────────────────── */
 
     .container {
@@ -181,6 +188,7 @@
     .hero-photo {
       width: 140px;
       height: 140px;
+      aspect-ratio: 1 / 1;
       border-radius: 50%;
       object-fit: cover;
       object-position: center top;
@@ -231,7 +239,7 @@
     }
 
     .proof-strip-item img {
-      width: 100%;
+      aspect-ratio: 9 / 16;
       max-height: 380px;
       object-fit: contain;
       border-radius: 8px;
@@ -381,13 +389,13 @@
     }
 
     .founder-headshot {
-      width: 100%;
       object-fit: cover;
       border-radius: 8px;
       display: block;
     }
 
     .founder-headshot {
+      aspect-ratio: 4 / 3;
       max-height: 300px;
     }
 
@@ -414,8 +422,7 @@
     }
 
     .founder-texts img {
-      width: 100%;
-      aspect-ratio: auto;
+      aspect-ratio: 9 / 16;
       object-fit: contain;
       border-radius: 8px;
       display: block;
@@ -533,7 +540,7 @@
     }
 
     .proof-img-wrap img {
-      width: 100%;
+      aspect-ratio: 9 / 16;
       object-fit: contain;
       border-radius: 8px;
       display: block;
@@ -681,7 +688,7 @@
 
     #final-cta {
       text-align: center;
-      scroll-margin-top: 0px;
+      scroll-margin-top: 20px;
     }
 
     #final-cta h2 {
