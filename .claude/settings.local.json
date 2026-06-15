@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"sticky-nav\\\\|<body>\\\\|HERO$\" \"/Users/ianmwiti/Downloads/iansroom-website/index.html\")"
+    ]
+  }
+}
