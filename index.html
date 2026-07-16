@@ -379,36 +379,20 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 48px;
-      align-items: stretch;
+      align-items: flex-start;
     }
 
     .founder-media {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      justify-content: space-between;
+      gap: 24px;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
 
     .founder-headshot {
-      object-fit: cover;
-      border-radius: 8px;
-      display: block;
-    }
-
-    .founder-headshot {
-      aspect-ratio: 4 / 3;
-      max-height: 300px;
-    }
-
-    .founder-photo-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-    }
-
-    .founder-photo-grid img {
       width: 100%;
-      aspect-ratio: 1 / 1;
+      max-height: 320px;
       object-fit: cover;
       border-radius: 8px;
       display: block;
@@ -418,8 +402,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px;
-      margin-top: auto;
-      align-self: flex-end;
+      margin-top: 24px;
     }
 
     .founder-texts img {
@@ -1039,12 +1022,6 @@
         </div>
         <div class="founder-media">
           <img class="founder-headshot" src="assets/images/ian-headshot.jpg" alt="Ian" loading="lazy" />
-          <div class="founder-photo-grid">
-            <img src="assets/images/ian-street.jpg" alt="Ian on the street" loading="lazy" style="object-position: 60% center;" />
-            <img src="assets/images/ian-hiking.jpg" alt="Ian hiking" loading="lazy" />
-            <img src="assets/images/ian-london.jpg" alt="Ian in London" loading="lazy" />
-            <img src="assets/images/ian-outdoors.jpg" alt="Ian outdoors" loading="lazy" />
-          </div>
           <div class="founder-texts">
             <img src="assets/images/JXN Text DM 1.png" alt="Client result" loading="lazy" />
             <img src="assets/images/MXL Text DM 1.png" alt="Client result" loading="lazy" />
