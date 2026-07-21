@@ -179,25 +179,6 @@
       text-align: center;
     }
 
-    .hero-photo-wrap {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 36px;
-    }
-
-    .hero-photo {
-      width: 140px;
-      height: 140px;
-      aspect-ratio: 1 / 1;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center top;
-      background-color: #1a9c6d;
-      border: 3px solid #1a9c6d;
-      box-shadow: 0 0 0 4px #0f1117, 0 0 0 7px #1a9c6d;
-      display: block;
-      flex-shrink: 0;
-    }
 
     #hero h1 {
       font-family: 'Inter', sans-serif;
@@ -371,45 +352,16 @@
 
     /* ── FOUNDER TWO-COLUMN LAYOUT ───────────────────────── */
 
+    #founder {
+      text-align: center;
+    }
+
     #founder h2 {
       text-align: center;
     }
 
-    .founder-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 48px;
-      align-items: flex-start;
-    }
-
-    .founder-media {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-
-    .founder-headshot {
-      width: 100%;
-      max-height: 320px;
-      object-fit: cover;
-      border-radius: 8px;
-      display: block;
-    }
-
-    .founder-texts {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-top: 24px;
-    }
-
-    .founder-texts img {
-      height: auto;
-      object-fit: contain;
-      border-radius: 8px;
-      display: block;
+    #founder .content-body {
+      max-width: 100%;
     }
 
     /* ── SOCIAL PROOF ───────────────────────────────────── */
@@ -729,11 +681,6 @@
         padding: 120px 0 100px;
       }
 
-      .hero-photo {
-        width: 180px;
-        height: 180px;
-      }
-
       /* Proof strip */
       #proof-strip {
         padding: 72px 0;
@@ -753,12 +700,6 @@
       .screenshot-pair {
         grid-template-columns: 1fr 1fr;
         gap: 28px;
-      }
-
-      /* Founder two-column layout */
-      .founder-grid {
-        grid-template-columns: 1.1fr 0.9fr;
-        gap: 64px;
       }
 
       /* Social proof and who grids */
@@ -818,14 +759,7 @@
   ═══════════════════════════════════════════════════ -->
   <section id="hero">
     <div class="container">
-      <div class="hero-photo-wrap">
-        <img
-          src="assets/images/IansRoom Profile Pic v2.png"
-          alt="Ian — founder of Ian's Room"
-          class="hero-photo"
-          loading="eager"
-        />
-      </div>
+      <span style="font-family:'Syne',sans-serif;font-size:clamp(28px, 3.8vw, 44px);font-weight:700;letter-spacing:-0.025em;text-transform:none;color:var(--accent);display:block;margin-bottom:32px;">The Confidence Conquest System™</span>
       <h1>Stop Waiting. Start Approaching. <span style="color:var(--accent)">Build Real Romantic Abundance In 12 Weeks.</span></h1>
       <p class="hero-sub">You don't need more YouTube content. You need <strong>the system</strong> that gives you the confidence to walk up to any woman, anywhere, and make something happen.</p>
       <div class="hero-cta-wrap">
@@ -945,7 +879,7 @@
           <div class="del-num">01</div>
           <div class="del-text">
             <strong>4-Day Immersion</strong>
-            <span>I travel to your preferred city. We go out together to destroy your approach anxiety and polish your conversations by approaching lots of women. This is where the breakthrough happens.</span>
+            <span>I travel to your preferred city. We go out together to destroy your approach anxiety and polish your conversations. This is where the breakthrough happens.</span>
           </div>
         </li>
         <li>
@@ -997,37 +931,26 @@
   <section id="founder" class="prose-section">
     <div class="container fade-in">
       <h2>Why I Built This</h2>
-      <div class="founder-grid">
-        <div class="founder-text">
-          <p>I know exactly how it feels to be you.</p>
-          <p>Good career. Healthy lifestyle. A life that looks great from the outside. But when it came to dating, I was completely stuck.</p>
-          <p>I was a Senior Economist at a global real-estate investment firm. I graduated top of my Economics class. I had my hobbies, my mates, my fitness. On paper, nothing was missing.</p>
-          <p>But I was on a four-year sexless dry streak, watching porn, and wondering why women didn't notice me.</p>
-          <p>I tried Tinder Premium. I swiped every day for weeks. Zero matches. That was my lowest point because of what it made me believe about myself.</p>
-          <p>So I decided to stop waiting and figure it out on my own. I started learning from the best content I could find. I made progress. I got my first date. But learning alone was hard. The self-doubt, the setbacks, and having nobody who understood what I was going through made it an emotional rollercoaster.</p>
-          <p>So I got a coach. And that's when everything took off.</p>
-          <p>Within weeks I broke the dry streak. I started meeting women and taking them out the same day I met them — something I'd never done before. I dated three stunning girls during my solo trip to Thailand — all documented on my YouTube channel for anyone who wants to see it. I met my latest girlfriend on the busiest street in London — which would have seemed impossible before I learned this skill. Romantic abundance is the new norm for me.</p>
-          <p>None of it took better looks. Or more money. Or a different personality.</p>
-          <p>Just the right system, and someone in my corner.</p>
-          <p>I built The Confidence Conquest System™ because I see my old self in the men who reach out to me. And I know exactly what's on the other side of this. Because I've lived it.</p>
-          <div style="text-align:center; margin-top:40px;">
-            <!-- CTA button - scroll-to-calendly applied -->
-            <a href="" class="btn-cta" onclick="Calendly.initPopupWidget({url:'https://calendly.com/iansroom/30min'});return false;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-              </svg>
-              Book A Call Now
-            </a>
-          </div>
-        </div>
-        <div class="founder-media">
-          <img class="founder-headshot" src="assets/images/ian-headshot.jpg" alt="Ian" loading="lazy" />
-          <div class="founder-texts">
-            <img src="assets/images/JXN Text DM 1.png" alt="Client result" loading="lazy" />
-            <img src="assets/images/MXL Text DM 1.png" alt="Client result" loading="lazy" />
-            <img src="assets/images/VXN TEXT WHATSAPP 1.png" alt="Client WhatsApp message" loading="lazy" />
-            <img src="assets/images/VXN TEXT WHATSAPP 2.png" alt="Client WhatsApp message" loading="lazy" />
-          </div>
+      <div class="content-body">
+        <p>I know exactly how it feels to be you.</p>
+        <p>A life that looks great from the outside. But when it came to dating, I was completely stuck.</p>
+        <p>I was a Senior Economist at a global real-estate investment firm. I graduated top of my Economics class. I had my hobbies, my mates, my fitness. On paper, nothing was missing.</p>
+        <p>But I was on a four-year sexless dry streak, watching porn, and wondering why women didn't notice me.</p>
+        <p>I tried Tinder Premium. I swiped every day for weeks. Zero matches. That was my lowest point because of what it made me believe about myself.</p>
+        <p>So I decided to stop waiting and figure it out on my own. I started learning from the best content I could find. I made progress. I got my first date. But learning alone was hard. The self-doubt, the setbacks, and having nobody who understood what I was going through made it an emotional rollercoaster.</p>
+        <p>So I got a coach. And that's when everything took off.</p>
+        <p>Within weeks I broke the dry streak. I started meeting women and taking them out the same day I met them — something I'd never done before. I dated three stunning girls during my solo trip to Thailand — all documented on my YouTube channel for anyone who wants to see it. I met my latest girlfriend on the busiest street in London — which would have seemed impossible before I learned this skill. Romantic abundance is the new norm for me.</p>
+        <p>None of it took better looks. Or more money. Or a different personality.</p>
+        <p>Just the right system, and someone in my corner.</p>
+        <p>I built The Confidence Conquest System™ because I see my old self in the men who reach out to me. And I know exactly what's on the other side of this. Because I've lived it.</p>
+        <div style="text-align:center; margin-top:40px;">
+          <!-- CTA button - scroll-to-calendly applied -->
+          <a href="" class="btn-cta" onclick="Calendly.initPopupWidget({url:'https://calendly.com/iansroom/30min'});return false;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            Book A Call Now
+          </a>
         </div>
       </div>
     </div>

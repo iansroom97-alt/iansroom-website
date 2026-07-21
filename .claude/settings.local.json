@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -n \"sticky-nav\\\\|<body>\\\\|HERO$\" \"/Users/ianmwiti/Downloads/iansroom-website/index.html\")"
+      "Bash(grep -n \"sticky-nav\\\\|<body>\\\\|HERO$\" \"/Users/ianmwiti/Downloads/iansroom-website/index.html\")",
+      "Bash(grep -n 'hero-photo-wrap\\\\|<h1>\\\\|founder-grid\\\\|founder-media\\\\|founder-texts\\\\|founder-headshot' \"/Users/ianmwiti/Downloads/iansroom-website/index.html\")",
+      "Read(//private/tmp/**)"
     ]
   }
 }
